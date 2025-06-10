@@ -216,10 +216,9 @@ if __name__ == "__main__":
     file = Path(__file__).resolve()
     parent, root = file.parent, file.parents[1]
     sys.path.append(str(root))
-    # Additionally remove the current file's directory from sys.path
     try:
         sys.path.remove(str(parent))
-    except ValueError:  # Already removed
+    except ValueError:
         pass
     # ---------------------------------------------------------------------------- #
     from audio.audio_utils import get_config_args, create_transform

@@ -42,7 +42,7 @@ dataloader:
   num_workers: 4                               # torch Dataloader workers
   batch_size: 10                              # batch size
   sequence_length: 500                         # miliseconds (-->to frames) segmenting audio as input to networks
-  data_path: preprocess/dummy_database/folds/   # Source data path, 'in folder preprocess/Dataset_name/folds
+  data_path: preprocess/pc_gita_vowels_augmented_processed/folds/  # Source data path, 'in folder preprocess/Dataset_name/folds
   fs: 16000                                    # sampling frequency (needed for online feature extraction)
 
 # Training options

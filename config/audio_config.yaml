@@ -15,4 +15,4 @@ torchaudio:
 
 postprocess:                    # for torchaudio features
   delta: 0                      # length of delta window. 0 means no delta computation
-  cmvn: False                   # If True normalizes feature dimension across utterance time
+  cmvn: True                   # If True normalizes feature dimension across utterance time

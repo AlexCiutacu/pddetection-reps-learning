@@ -832,7 +832,6 @@ class AERNNNetEncoder(AERNNNet):
 
 
 if __name__ == "__main__":
-    # # ------------------------------ changing the paths ----------------------------- #
     import sys
     from pathlib import Path
 
@@ -842,7 +841,6 @@ if __name__ == "__main__":
     sys.path.append(str(root))
     os.chdir(root)
 
-    # # ---------------------------------------------------------------------------- #
     from torch.utils.data import DataLoader
     from audio.audio_utils import get_config_args, create_transform
     from audio.audio_dataset import OnlineAcousticDataset, OfflineAcousticDataset
